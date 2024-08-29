@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <title>Task Manager</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+	</head>
+	<body class="back">
+		<h1 class="back1">Task Manager</h1>
+		<div class="pic1">
+			<img src="./task.png" class="pic2" >
+			<img src="./task1.png" class="pic">
+		</div>
+		<div class="back2">
+		  <input class="input" type="text" id="taskinput" placeholder="Enter Your Task">
+		  <button id="addtask">Add Task</button>
+		</div>
+		<ul id="tasklist">
+			
+		</ul>
+		<script src="./task-manager.js"></script>
+	</body>
+	<style>
+		.back{
+			background: linear-gradient(270deg,#418458a6,#b064c9);
+		}
+		.back1{
+			font-family: monospace;
+			text-align: center;
+			width:50%;
+			height: 50%;
+			padding: 5px;
+			margin-top: 20px;
+			margin-left: 25%;
+			border-radius: 5px;
+			border-width: 5px;
+			border-style: inset;
+			border-color: black;
+			background-color: rgb(115, 62, 207);
+		}
+		.back2{
+			text-align: center;
+			margin-top:3%;
+		}
+		.input{
+			width:25%;
+			height:30px;
+			font-size: medium;
+			border-radius: 10px;
+			border-color: black;
+			border-style:groove;
+			border-width: 2px;
+		}
+		#addtask{
+			padding: 5px;
+			background-color: brown;
+			border-radius:5px;
+			font-style:oblique;
+		}
+		#addtask:hover{
+			background-color: cornflowerblue;
+		}
+		.pic{
+			margin-left:3%;
+			width:20%;
+			border-radius: 25px;
+		}
+		.pic1{
+			display: flex;
+		}
+		.pic2{
+			margin-left:28%;
+			width:20%;
+			border-radius:25px;
+		}
+		.highlight{
+			background-color: lightgoldenrodyellow;
+		}
+		.completed{
+			text-decoration: line-through;
+			color:gray;
+		}
+		.removebutton{
+			color:white;
+			padding: 5px;
+			background-color: red;
+			border-radius: 5px;
+			border-color: black;
+			border-width:2px;
+			cursor: pointer;
+		}
+		.removebutton:hover{
+			background-color: lightcoral;
+			color: black;
+		}
+		.editbutton{
+			color:white;
+			padding: 5px;
+			background-color: royalblue;
+			border-radius: 5px;
+			border-color: black;
+			border-width:2px;
+			cursor: pointer;
+		}
+		.editbutton:hover{
+			background-color:lightskyblue;
+			color: black;
+		}
+	</style>
+
+</html>
